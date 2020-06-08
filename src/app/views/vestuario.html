@@ -1,0 +1,23 @@
+<h3>{{title}}</h3>
+<br>
+<div *ngIf="!vestuario">
+    Cargando Vestuarios
+</div>
+<div *ngIf="vestuario">
+    <ul>
+        <li *ngFor="let vestuario of vestuario">
+            <img src={{vestuario.imagen}} style="width:250px; height:20%"/>
+            <br>
+
+            <strong>{{vestuario.nombre}}</strong>
+            <br>
+            {{vestuario.precio}}
+            <br>
+            {{vestuario.categoria}}
+            <br>
+            {{vestuario.contactoVendedor}}
+            <br>
+        </li>
+        
+    </ul>
+</div>

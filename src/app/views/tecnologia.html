@@ -1,0 +1,22 @@
+<h3>{{title}}</h3>
+<br>
+<div *ngIf="!tecnologia">
+    Cargando productos de tecnologia
+</div>
+<div *ngIf="tecnologia">
+    <ul>
+        <li *ngFor="let tecnologia of tecnologia">
+            <img src={{tecnologia.imagen}} style="width:250px; height:20%"/>
+            <br>
+            <strong>{{tecnologia.nombre}}</strong>
+            <br>
+            {{tecnologia.precio}}
+            <br>
+            {{tecnologia.categoria}}
+            <br>
+            {{tecnologia.contactoVendedor}}
+            <br>
+        </li>
+        
+    </ul>
+</div>

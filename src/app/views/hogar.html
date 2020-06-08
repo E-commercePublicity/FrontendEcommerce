@@ -1,0 +1,22 @@
+<h3>{{title}}</h3>
+<br>
+<div *ngIf="!hogar">
+    Cargando productos para el Hogar
+</div>
+<div *ngIf="hogar">
+    <ul>
+        <li *ngFor="let hogar of hogar">
+            <img src={{hogar.imagen}} style="width:250px; height:20%"/>
+            <br>
+            <strong>{{hogar.nombre}}</strong>
+            <br>
+            {{hogar.precio}}
+            <br>
+            {{hogar.categoria}}
+            <br>
+            {{hogar.contactoVendedor}}
+            <br>
+        </li>
+        
+    </ul>
+</div>
