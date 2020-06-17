@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@@ -1,15 +1,15 @@
+# contenido {
+    borde : 1 px sólido # eee ;
+    borde : 1 px sólido rgba ( 8 , 53 , 150 , 0.404 ) ;   
+    radio de borde : 4 px ;
+    margen superior : 30 px ;
+    fondo : blanco ;
+    fondo : rgba ( 255 , 255 , 255 , 0.548 ) ;   
+    cuadro-sombra : 0 px  2 px  4 px  # ccc ;
+    relleno : 0 px ;
+    desbordamiento : oculto;
+}
+# encabezado {
+    fondo : # 00adce ;
+    color : blanco ;
+    fondo : # 007cce9f ;
+    color : rgba ( 255 , 255 , 255 , 0.897 ) ;   
+    margen : 0 px ;
+    altura : 80 px ;
+    altura de línea : 90 px ;
+}
+# encabezado  h1 {
+    pantalla : bloque;
+    altura de línea : 50 px ;
+}
+# nav  ul {
+    tipo-estilo-lista : ninguno;
+    margen : 0 px ;
+}
+# nav  ul  li {
+    flotador : izquierda;
+    margen derecho : 20 px ;
+}
+# nav  ul  li  a {
+    altura : 30 px ;
+    pantalla : bloque;
+    altura de línea : 30 px ;
+}
+# nav {
+    relleno : 0 px ;
+    margen : 0 px ;
+}
+# main . jumbotron {
+    relleno : 50 px ;
+    margen superior : 30 px ;
+}
