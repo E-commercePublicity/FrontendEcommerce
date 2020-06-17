@@ -1,23 +1,32 @@
 <h3>{{title}}</h3>
-<br>
-<div *ngIf="!vestuario">
-    Cargando Vestuarios
-</div>
-<div *ngIf="vestuario">
-    <ul>
-        <li *ngFor="let vestuario of vestuario">
-            <img src={{vestuario.imagen}} style="width:250px; height:20%"/>
-            <br>
 
-            <strong>{{vestuario.nombre}}</strong>
-            <br>
-            {{vestuario.precio}}
-            <br>
-            {{vestuario.categoria}}
-            <br>
-            {{vestuario.contactoVendedor}}
-            <br>
-        </li>
-        
-    </ul>
+
+
+<div class="row">
+  <table class="table table-bordered table-striped text-center">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Img</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Categoria</th>
+      <th>Telefono</th>
+    </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let tec of vestuario">
+          <td>{{tec.id}}</td>
+          <td> <img src="{{tec.imagen}}" style="width: 40px;border-radius: 10px"/></td>
+          <td>{{tec.nombre}}</td>
+          <td>{{tec.precio}}</td>
+          <td>{{tec.categoria}}</td>
+          <td>{{tec.contactoVendedor}}</td>
+        </tr>
+
+    </tbody>
+  </table>
 </div>
+
+

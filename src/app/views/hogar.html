@@ -3,20 +3,29 @@
 <div *ngIf="!hogar">
     Cargando productos para el Hogar
 </div>
-<div *ngIf="hogar">
-    <ul>
-        <li *ngFor="let hogar of hogar">
-            <img src={{hogar.imagen}} style="width:250px; height:20%"/>
-            <br>
-            <strong>{{hogar.nombre}}</strong>
-            <br>
-            {{hogar.precio}}
-            <br>
-            {{hogar.categoria}}
-            <br>
-            {{hogar.contactoVendedor}}
-            <br>
-        </li>
-        
-    </ul>
+
+
+<div class="row">
+  <table class="table table-bordered table-striped text-center">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Categoria</th>
+      <th>Telefono</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tec of hogar">
+      <td>{{tec.id}}</td>
+      <td>{{tec.nombre}}</td>
+      <td>{{tec.precio}}</td>
+      <td>{{tec.categoria}}</td>
+      <td>{{tec.contactoVendedor}}</td>
+    </tr>
+
+    </tbody>
+  </table>
 </div>
+

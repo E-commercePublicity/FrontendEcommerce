@@ -8,7 +8,7 @@ import { HogarService } from '../services/hogar.service'
   })
   export class HogarComponent {
     public title: string;
-  public hogar:object
+  public hogar:any
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
@@ -21,12 +21,13 @@ import { HogarService } from '../services/hogar.service'
   }
   getHogar(){
     this._hogarService.getHogar().subscribe(
-      result => {
+      (result : any ) => {
 
         this.hogar=result
-         
+
       },
       error => {
+        this.hogar = [];
         console.log(<any>error);
       }
     );
