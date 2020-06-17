@@ -1,46 +1,45 @@
-@@ -1,15 +1,15 @@
-# contenido {
-    borde : 1 px sólido # eee ;
-    borde : 1 px sólido rgba ( 8 , 53 , 150 , 0.404 ) ;   
-    radio de borde : 4 px ;
-    margen superior : 30 px ;
-    fondo : blanco ;
-    fondo : rgba ( 255 , 255 , 255 , 0.548 ) ;   
-    cuadro-sombra : 0 px  2 px  4 px  # ccc ;
-    relleno : 0 px ;
+#contenido {
+    borde : 1pxsolid #eee ;
+    borde : 1pxsolid rgba( 8 , 53 , 150 , 0.404 ) ;
+    border-radius : 4px;
+    margin-top : 30px;
+    background : white ;
+    background : rgba(255,255,255, 0.404 ) ;
+    cuadro-sombra : 0px 2px 4px #ccc ;
+    relleno : 0px;
     desbordamiento : oculto;
 }
-# encabezado {
-    fondo : # 00adce ;
-    color : blanco ;
-    fondo : # 007cce9f ;
-    color : rgba ( 255 , 255 , 255 , 0.897 ) ;   
-    margen : 0 px ;
-    altura : 80 px ;
-    altura de línea : 90 px ;
+#encabezado {
+    background : #00adce ;
+    color : white ;
+    background : #007cce9f ;
+    color : rgba( 255 , 255 , 255 , 0.897 ) ;
+    margen : 0px;
+    altura : 80px;
+   line-height : 90px;
 }
-# encabezado  h1 {
+#encabezado  h1 {
     pantalla : bloque;
-    altura de línea : 50 px ;
+   line-height : 50px;
 }
-# nav  ul {
+#nav  ul {
     tipo-estilo-lista : ninguno;
-    margen : 0 px ;
+    margen : 0px;
 }
-# nav  ul  li {
+#nav  ul  li {
     flotador : izquierda;
-    margen derecho : 20 px ;
+    margin-right : 20px;
 }
-# nav  ul  li  a {
-    altura : 30 px ;
+#nav  ul  li  a {
+    altura : 30px;
     pantalla : bloque;
-    altura de línea : 30 px ;
+   line-height : 30px;
 }
-# nav {
-    relleno : 0 px ;
-    margen : 0 px ;
+#nav {
+    relleno : 0px;
+    margen : 0px;
 }
-# main . jumbotron {
-    relleno : 50 px ;
-    margen superior : 30 px ;
+#main . jumbotron {
+    relleno : 50px;
+    margin-top : 30px;
 }

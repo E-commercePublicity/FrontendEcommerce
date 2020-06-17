@@ -8,7 +8,7 @@ import { TecnologiaService } from '../services/tecnologia.service'
   })
   export class TecnologiaComponent {
     public title: string;
-  public tecnologia:object
+  public tecnologia:any;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
@@ -17,17 +17,18 @@ import { TecnologiaService } from '../services/tecnologia.service'
     this.title = 'Productos de tecnologia';
   }
   ngOnInit() {
-    this.getEvento()
+    this.getEvento();
   }
+  //Service
   getEvento(){
     this._tecnologiaService.getTecnologia().subscribe(
-      result => {
+      (result: any ) => {
+        this.tecnologia = result;
 
-        this.tecnologia=result
-         
       },
       error => {
-        console.log(<any>error);
+        this.tecnologia = [];
+        // console.log(<any>error);
       }
     );
   }

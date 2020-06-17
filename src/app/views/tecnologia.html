@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/assets/styles.css" type="text/css">    
+    <link rel="stylesheet" href="/src/assets/styles.css" type="text/css">
 
-    <!-- No funciona la invocacion de l style.css-->
-    
-   
 </head>
-<body>    
-    <h3>{{Cargando productos de tecnologia}}</h3>
-    <div id="main">
-        <div id="container">
-            <ul>
-                <li *ngFor="let tecnologia of tecnologia">
-                    <img src=tecnologia.imagen style="width:250px; height:20%" alt="IMG"/>
-                    <br>
-                </li>
-                <li>
-                    <strong>{{tecnologia.nombre}}</strong>
-                    <br>
-                </li>
-                <li>
-                    {{tecnologia.precio}}
-                    <br>
-                </li>
-                <li>
-                    {{tecnologia.categoria}}
-                    <br>
-                </li>
-                <li>
-                    {{tecnologia.contactoVendedor}}
-                    <br>
-                </li>  
-            </ul>              
-        </div>
-    </div>
+<body>
+  <div class="row">
+    <table class="table table-bordered table-striped text-center">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoria</th>
+        <th>Telefono</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let tec of tecnologia">
+        <td>{{tec.id}}</td>
+        <td>{{tec.nombre}}</td>
+        <td>{{tec.precio}}</td>
+        <td>{{tec.categoria}}</td>
+        <td>{{tec.contactoVendedor}}</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
 </body>
 </html>
