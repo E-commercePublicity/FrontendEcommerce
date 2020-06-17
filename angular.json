@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontEcommerce"
+    }
+  },
+  "defaultProject": "frontEcommerce",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,22 +1,41 @@
-<h3>{{title}}</h3>
-<br>
-<div *ngIf="!tecnologia">
-    Cargando productos de tecnologia
-</div>
-<div *ngIf="tecnologia">
-    <ul>
-        <li *ngFor="let tecnologia of tecnologia">
-            <img src={{tecnologia.imagen}} style="width:250px; height:20%"/>
-            <br>
-            <strong>{{tecnologia.nombre}}</strong>
-            <br>
-            {{tecnologia.precio}}
-            <br>
-            {{tecnologia.categoria}}
-            <br>
-            {{tecnologia.contactoVendedor}}
-            <br>
-        </li>
-        
-    </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/styles.css" type="text/css">    
+
+    <!-- No funciona la invocacion de l style.css-->
+    
+   
+</head>
+<body>    
+    <h3>{{Cargando productos de tecnologia}}</h3>
+    <div id="main">
+        <div id="container">
+            <ul>
+                <li *ngFor="let tecnologia of tecnologia">
+                    <img src=tecnologia.imagen style="width:250px; height:20%" alt="IMG"/>
+                    <br>
+                </li>
+                <li>
+                    <strong>{{tecnologia.nombre}}</strong>
+                    <br>
+                </li>
+                <li>
+                    {{tecnologia.precio}}
+                    <br>
+                </li>
+                <li>
+                    {{tecnologia.categoria}}
+                    <br>
+                </li>
+                <li>
+                    {{tecnologia.contactoVendedor}}
+                    <br>
+                </li>  
+            </ul>              
+        </div>
+    </div>
+</body>
+</html>
