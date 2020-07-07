@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { HogarService } from '../services/hogar.service'
+//componente para obtener los productos para el hogar
 @Component({
     selector: 'hogar',
     templateUrl: '../views/hogar.html',
@@ -19,6 +20,8 @@ import { HogarService } from '../services/hogar.service'
   ngOnInit() {
     this.getHogar()
   }
+  //funcion que obtiene los productos
+
   getHogar(){
     this._hogarService.getHogar().subscribe(
       (result : any ) => {

@@ -3,7 +3,7 @@ import { HttpClient , HttpHeaders, HttpResponse } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable'; 
 import {GLOBAL} from '../services/global' 
-
+//servicio que realiza la peticion al backend
 
 @Injectable()
     export class HogarService{
