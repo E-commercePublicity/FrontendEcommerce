@@ -1,5 +1,5 @@
 body{
-    background-color: #632432;
+    background-color: #505c74;
 }
 
 #main-container{
@@ -8,7 +8,7 @@ body{
 }
 
 table{
-    background-color: white;
+    background-color: rgba(23, 21, 163, 0.493);
     text-align: left;
     width: 100%;
 }
